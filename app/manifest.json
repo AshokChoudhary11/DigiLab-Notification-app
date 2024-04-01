@@ -1,0 +1,39 @@
+{
+  "name": "PWA App",
+  "short_name": "App",
+  "icons": [
+    {
+      "src": "logo/logo-144px.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "logo/logo-16px.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "source/image1.png",
+      "sizes": "710x1488",
+      "type": "image/img",
+      "form_factor": "wide",
+      "label": "Application"
+    },
+    {
+      "src": "source/image2.png",
+      "sizes": "710x1488",
+      "type": "image/img",
+      "label": "Application"
+    }
+  ],
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}

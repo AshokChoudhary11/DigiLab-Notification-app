@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import NotificationProvider from "@/components/NotificationProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+        />
+        <link
+          rel="icon"
+          type="image/svg"
+          sizes="16x16"
+          href="/logo/logo-16x16.svg"
+        />
+         <link
+          rel="icon"
+          type="image/svg"
+          sizes="144x144"
+          href="/logo/logo-144x144.svg"
+        />
+
+        <link rel="manifest" href="/manifest.json" />
+        <NotificationProvider>{children}</NotificationProvider>
+      </body>
     </html>
   );
 }
