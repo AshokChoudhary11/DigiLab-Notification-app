@@ -2,7 +2,7 @@ import { NotificationContext } from '@/components/NotificationProvider'
 import { useContext, useEffect, useRef } from 'react'
 import OneSignal from 'react-onesignal'
 
-export const ONE_SIGNAL_SUBSCRIPTION_KEY = 'onesignal-subscription'
+export const ONE_SIGNAL_SUBSCRIPTION_KEY = 'onesignal-subscription-testing'
 
 const useOneSignal = () => {
     const onesignalInitializingRef = useRef(false)
@@ -19,7 +19,7 @@ const useOneSignal = () => {
                         appId: '04adfa5d-80f0-4ab3-abb1-011c81033d79',
                         allowLocalhostAsSecureOrigin: true,
                         notifyButton: {
-                            enabled: true,
+                            enabled: false,
                         },
                     })
                     setIsInitialized(true)

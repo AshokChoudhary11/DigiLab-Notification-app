@@ -8,7 +8,6 @@ const withPwa = withPwaInit({
     scope: '/',
 })
 
-const nextConfig = {
-};
+const nextConfig = {};
 
 export default withPwa(nextConfig)
