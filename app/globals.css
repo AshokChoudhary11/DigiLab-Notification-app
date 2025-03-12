@@ -29,7 +29,7 @@ body {
 .notification-button{
   border-radius: 8px;
   border: 1.4px solid rgba(157, 13, 61, 0.00);
-  background: linear-gradient(90deg, rgba(157, 13, 61, 0.00) -10.64%, #DF522B 51.94%, rgba(199, 125, 44, 0.00) 116.51%);
+  background: linear-gradient(90deg, #6434CE -10.64%, rgba(157, 13, 61, 0.00) 51.94%, #6434CE 116.51%);
   /* Shadow 1 */
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.12);
 }

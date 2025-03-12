@@ -11,15 +11,19 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col items-center justify-center gap-4 w-100">
+        <h2 className="text-white text-xl">Hola!</h2>
+      </div>
+      <div className="relative w-full flex justify-center items-center">
+        <img
+          src={"/Illustration.png"}
+          alt="background-image"
+          className="w-full max-w-[400px] m-auto "
+        />
+        <img src={"/Vector.png"} alt="bellIcon" className="absolute left-1/2 transform -translate-x-1/2 w-[180px]" />
+      </div>
+      <div className="flex flex-col items-center justify-center gap-4 w-100">
         <h1 className="text-white text-3xl">Lorem Ipsum...</h1>
         <h2 className="text-slate-500 text-xl">Lorem ipsum dolor sit amet.</h2>
-      </div>
-      <div className="w-full">
-        <img
-          src={"/bg.png"}
-          alt="background-image"
-          className="w-full max-w-[400px] m-auto"
-        />
       </div>
       <div className="w-full">
         {isSubscribed ? (
